@@ -120,8 +120,6 @@
           >
             Заказать услугу
           </button>
-          
-          </div>
         </div>
       </section>
 
@@ -820,13 +818,48 @@
             </li>
           </ul>
         </div>
+<div class="footer-input">
+<form class="footer-form">
+  <p class="footer-sub">Подпишитесь на рассылку</p>
+  <div class="footer-input-position">
+  <input type="email" name="enail" placeholder="E-mail" class="footer-email-input">
+  <button type="submit" class="footer-btn">Подписаться 
+    <svg width="24"height="24" class="footer-btn-icon"><use href="../hw6/icons/symbol-defs.svg#icon-send1"></use></svg>
+  </button>
+</div>
+</form>
+</div>
+
+
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
 <button type="button" class="popup-btn" data-modal-close> 
-<svg class="popup-icon" width="30" height="'30"> <use href="./icons/symbol-defs.svg#icon-close"></use> </svg>  
+<svg class="popup-icon" width="18" height="18"> <use href="./icons/symbol-defs.svg#icon-close"></use> </svg>  
 </button>
+<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+<form class="modal-form">
+  <div class="form-input">
+<label for="name" class="form-label">Имя</label>
+  <input type="text" name="name" class="modal-input" id="name" required>
+  </div>
+  <div class="form-input">
+ <label for="phone-number" class="form-label">Телефон</label>  
+  <input type="tel" name="phone-number" class="modal-input" id="phone-number" required>
+  </div>
+  <div class="form-input">
+<label for="email" class="form-label">Почта</label>
+   <input type="email" name="email" class="modal-input" id="email" required>
+  </div>
+  <div class="form-input">
+<label for="textarea" class="form-label">Комментарий</label>
+<textarea name="comment" id="comment" class="comment" placeholder="Введите текст"></textarea>
+</div>
+  
+  
+  <button type="submit" class="submit-btn"> Отправить</button>
+</form>
       </div>
       <script src="./js/modal.js"></script>
   </body>
